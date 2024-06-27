@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS date time task</title>
+    
+    <style>
+      div{
+        border:2px  solid;
+      }
+    </style>
+  </head>
+  <body>
+      <div>
+
+      <h3>
+        1st Number:
+        <input
+          type="number"
+          id="typeInput1"
+          style="height: 15px; width: 100px"
+        />
+      </h3>
+      <h3>
+        2nd Number:
+        <input
+          type="number"
+          id="typeInput2"
+          style="height: 15px; width: 100px"
+        />
+      </h3>
+      <button style="height: 25px; width: 60px" onclick="button_1()">
+        Multiply
+      </button>
+      <button style="height: 25px; width: 60px" onclick="button_2()">
+        Divide
+      </button>
+      <h3>The Result Is:</h3>
+
+      <h3 id="answer"></h3>
+    </div>
+
+    <script>
+      function button_1() {
+        let a = document.getElementById("typeInput1").value;
+        let b = document.getElementById("typeInput2").value;
+        document.getElementById("answer").innerHTML = a * b;
+      }
+
+      function button_2() {
+        let a = document.getElementById("typeInput1").value;
+        let b = document.getElementById("typeInput2").value;
+        document.getElementById("answer").innerHTML = a / b;
+      }
+    </script>
+  </body>
+</html>
